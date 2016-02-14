@@ -1,0 +1,50 @@
+﻿Garrett Schwartz 102076685
+garrett.schwartz@ucdenver.edu
+CSCI3800 HW1 Part 1
+Spring 2016
+=======================
+Api request header
+=======================
+The api request does not contain special headers.
+
+=======================
+Response Header
+=======================
+
+alt-svc → quic=":443"; ma=604800; v="30,29,28,27,26,25"
+alternate-protocol → 443:quic,p=1
+cache-control → private, max-age=0, must-revalidate, no-transform
+content-encoding → gzip
+content-length → 6771
+content-type → application/json; charset=UTF-8
+date → Sat, 13 Feb 2016 06:06:38 GMT
+etag → "3z2GbiG39NRdo416x8jooTTBAqY/dELHd1xpyyC-E7l21yqe9JfB6ds"
+expires → Sat, 13 Feb 2016 06:06:38 GMT
+server → GSE
+status → 200
+vary → Origin, X-Origin
+x-content-type-options → nosniff
+x-frame-options → SAMEORIGIN
+x-xss-protection → 1; mode=block
+
+=======================
+Javascript Test
+=======================
+var response = JSON.parse(responseBody);
+
+var test_is_true = true;
+
+var pattern = new RegExp(/turing/i) ; 
+
+var temp_string = "Item";
+
+for (i = 0; i < response.items.length; i++){
+    
+    if (pattern.test(response.items[i].volumeInfo.title) === false)
+    {
+        test_is_true = false;
+        
+    }
+    
+    tests[i] = test_is_true;
+}

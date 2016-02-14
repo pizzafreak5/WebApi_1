@@ -1,0 +1,23 @@
+Garrett Schwartz 102076685
+garrett.schwartz@ucdenver.edu
+CSCI3800 HW1 Part 2
+Spring 2016
+=======================
+Api request header
+=======================
+
+The request does not contain any SOAP headers
+
+=======================
+Response Headers
+=======================
+Cache-Control: private, max-age=0
+Server: Microsoft-IIS/7.0
+Content-Encoding: gzip
+X-AspNet-Version: 4.0.30319
+Vary: Accept-Encoding
+#status#: HTTP/1.1 200 OK
+Content-Length: 403
+Date: Sun, 14 Feb 2016 00:18:13 GMT
+Content-Type: text/xm;; charset=uft-8
+X-Powered-By: ASP.NET
